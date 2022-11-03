@@ -33,13 +33,13 @@ public class Main {
         System.out.println("--");
         System.out.println("ЗАДАЧА 4");
 
-        int people = 12_000_000;
-        int birthOn1000 = 17;
-        int deathOn1000 = 8;
+        double people = 12_000_00;
+        float birthOn1000 = 17/100F;
+        float  deathOn1000 = 8/100F;
         int year = 0;
         while (year < 10) {
             year++;
-            people = people + people/1000*17 - people/1000*8;
+            people = people + people * birthOn1000 - people * deathOn1000;
             System.out.println("Год " + year + ", численность населения составляет " + people);
         }
 
@@ -80,11 +80,20 @@ public class Main {
         System.out.println("--");
         System.out.println("ЗАДАЧА 8");
 
-        for (int k = 0; k < 2122; k++) {
-            if (k % 79 == 0 && k > 1822) {
-                System.out.println(k);
+
+        int nowYear = 2022;
+        int beforeNowYear = nowYear - 200;
+        int afterNowYear = nowYear + 100;
+
+        for (int years = 0; years < afterNowYear; years += 79) {
+            if (years > beforeNowYear) {
+                System.out.println(years);
             }
+
         }
+
+
+
 
         System.out.println("--");
         System.out.println("ЗАДАЧА 9");
