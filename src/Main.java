@@ -5,13 +5,13 @@ public class Main {
 
         int salary = 15000;
         int total = 0;
-        int i = 0;
+        int month = 0;
 
         while (total < 2_495_000) {
             total = total + salary;
-            i = i + 1;
+            month = month + 1;
         }
-        System.out.println("Месяц " + i + ", сумма накоплений равна " + total);
+        System.out.println("Месяц " + month + ", сумма накоплений равна " + total);
 
         System.out.println("--");
         System.out.println("ЗАДАЧА 2");
